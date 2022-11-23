@@ -22,7 +22,7 @@
 
   buyDonutBtn.addEventListener("click", function(){
     myDonut.bakeDonut();
-    myDonut.spoilDonut();
+    //myDonut.spoilDonut();
     currentDonuts.innerText ="Donuts: " + myDonut.getDonutCount();
   });
 
@@ -30,7 +30,7 @@
     myDonut.addAutoClicker();
     currentAutoClickers.innerText ="Donut Auto Clickers Owned: " + myDonut.getAutoClickerCount();
     currentAutoClickersPrice.innerText = "Price: " + myDonut.priceForAuto + " donuts";
-    myDonut.startClickerInterval();
+   // myDonut.startClickerInterval();
   });
 
   buyDonutMultiplierBtn.addEventListener("click", function(){

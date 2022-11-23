@@ -14,7 +14,7 @@ class DonutShop{
         clearInterval(this.clickerIntervalID);
         this.clickerIntervalID = undefined;
         clearInterval(this.spoilIntervalID);
-        this.spoilIntervalID = undefined;
+        //this.spoilIntervalID = undefined;
         this.priceForAuto = 100;
         this.priceForMultiply = 10;
     }
@@ -33,13 +33,13 @@ class DonutShop{
         this.donutCount += this.donutsEarned;
     }
 
-    spoilDonut(){
-        if(this.donutCount >= 100 && this.spoilIntervalID == undefined)
-        {
-            this.spoilIntervalID = self.setInterval(this.runSpoilDonut, 5000);
-        }
+    //spoilDonut(){
+        //if(this.donutCount >= 100 && this.spoilIntervalID == undefined)
+       // {
+        //    this.spoilIntervalID = self.setInterval(this.runSpoilDonut, 5000);
+        //}
         
-    }
+   // }
 
     addAutoClicker(){
         if(this.donutCount >= this.priceForAuto){
